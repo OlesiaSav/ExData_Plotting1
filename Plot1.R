@@ -1,7 +1,7 @@
 
 library(Hmisc)
 
-#setwd ("C:/My documents/Study R/course2" )
+setwd ("C:/My documents/Study R/course2" )
 
 data <- read.table(file="household_power_consumption.txt", sep=";", header=TRUE, na.strings = "?", stringsAsFactors = F)
 

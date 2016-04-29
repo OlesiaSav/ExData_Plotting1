@@ -25,7 +25,7 @@ db <- data[data$Date == "2007-02-01" | data$Date == "2007-02-02", ]
 #save plot
 
 par(mfrow=c(1,1))
-dev.copy(png,'plot3.png')
+dev.copy(png,'plot3.png',width = 480, height = 480, units = "px", bg = "white")
 with(db,{
   plot(db$DataTime,db$Sub_metering_1,type="l", ylab = "Energy sub metering", xlab = "",col="black")
   lines(db$DataTime,db$Sub_metering_2,col="red")

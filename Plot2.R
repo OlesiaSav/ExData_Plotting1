@@ -24,7 +24,7 @@ db <- data[data$Date == "2007-02-01" | data$Date == "2007-02-02", ]
 
 #save plot
 par(mfrow=c(1,1))
-dev.copy(png,'plot2.png')
+dev.copy(png,'plot2.png',width = 480, height = 480, units = "px", bg = "white")
 plot(db$DataTime, db$Global_active_power, type="l", ylab = "Global Active Power(kilowatts)", xlab = "")
 dev.off()
 
